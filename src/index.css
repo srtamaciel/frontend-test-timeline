@@ -16,7 +16,7 @@ html{
 }
 .button{
   display: flex;
-  justify-content: center;
+  justify-content: space-evenly;
 }
 button{
   background-color: none;
