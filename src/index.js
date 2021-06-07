@@ -24,12 +24,9 @@ class App extends React.PureComponent {
   };
 
   state = {
-    layout: [
-      /*   { x: 0, y: 0, w: 3, h: 3, i: getId() },
-      { x: 0, y: 1, w: 3, h: 3, i: getId() },
-      { x: 0, y: 2, w: 3, h: 3, i: getId() }  */
-    ],
+    layout: [],
     showMessage: false,
+    seeTimeline: true
   };
 
   render() {
@@ -114,6 +111,21 @@ class App extends React.PureComponent {
   </div>
   }
 
+  const timeline = () => {
+    this.setState({seeTimeline: true})
+   return( this.state.layout.map((item) => (
+      <div
+        key={item.i}
+        data-grid={item}
+      >
+        <span>{item.i.slice(0, 6)}</span>
+      </div>
+    )) )
+
+  }
+
+ 
+
     return (
       <React.Fragment>
         <div className="button">
@@ -129,16 +141,10 @@ class App extends React.PureComponent {
         resizeHandles={['e']}
           {...this.props}
           onLayoutChange={(layout) => this.setState({layout})}
+          style={{visibility: this.state.seeTimeline ? 'visible' : 'hidden'}}
         >
-        
-          {this.state.layout.map((item) => (
-            <div
-              key={item.i}
-              data-grid={item}
-            >
-              <span>{item.i.slice(0, 6)}</span>
-            </div>
-          ))}
+          {this.state.layout.length ?  timeline() :  this.setState({seeTimeline: false})
+          }
         </ReactGridLayout>
         <div className="button">
           <button onClick={exportButton}>Export</button>

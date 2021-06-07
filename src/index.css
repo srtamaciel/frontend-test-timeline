@@ -4,9 +4,7 @@
 html{
   background-color: rgb(51, 50, 50);
 }
-.react-layout{
-  height: 0px;
-}
+
 .react-grid-layout {
   position: relative;
   transition: height 200ms ease; 
