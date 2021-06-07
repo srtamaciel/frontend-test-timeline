@@ -1,15 +1,52 @@
+#root{
+  font-family: Arial, Helvetica, sans-serif;
+}
+html{
+  background-color: rgb(51, 50, 50);
+}
+.react-layout{
+  height: 0px;
+}
 .react-grid-layout {
   position: relative;
-  transition: height 200ms ease;
-  margin-top: 5vh;
-  background-color: lightgray;
+  transition: height 200ms ease; 
+  margin-top: 2vh;
+  margin-bottom: 5vh;
+  background-color: rgb(95, 94, 94);
+}
+.button{
+  display: flex;
+  justify-content: center;
+}
+button{
+  background-color: none;
+  border:none;
+  padding: 10px;
+  transition: 300ms;
+  border-radius: 5px;
+}
+button:hover {
+  transition: 300ms;
+  background-color: transparent;
+  border:none;
+  padding: 10px;
+  color:whitesmoke;
+  cursor: pointer;
+}
+.timeline-title{
+  display: flex;
+  justify-content: center;
+  color: whitesmoke;
+  margin-top: 1vh;
 }
 .react-grid-item {
   transition: all 200ms ease;
   transition-property: left, top;
-  background: rgba(0, 132, 255, 0.473);
-  font-family: Arial, Helvetica, sans-serif;
+  background: rgb(250, 126, 104);
+  color: white;
   text-align: center;
+  border-radius: 5px;
+
 }
 .react-grid-item span {
   display: inline-block;
@@ -20,7 +57,7 @@
 }
 .react-grid-item.resizing {
   z-index: 1;
-  will-change: width, height;
+  will-change: width;
 }
 
 .react-grid-item.react-draggable-dragging {
@@ -30,7 +67,7 @@
 }
 
 .react-grid-item.react-grid-placeholder {
-  background: red;
+  background: grey;
   opacity: 0.2;
   transition-duration: 100ms;
   z-index: 2;
@@ -47,7 +84,7 @@
   height: 20px;
   bottom: 0;
   right: 0;
-  cursor: se-resize;
+  
 }
 
 .react-grid-item > .react-resizable-handle::after {
@@ -59,4 +96,8 @@
   height: 5px;
   border-right: 2px solid rgba(0, 0, 0, 0.4);
   border-bottom: 2px solid rgba(0, 0, 0, 0.4);
+}
+.export-info{
+  text-align: center;
+  color: whitesmoke;
 }
