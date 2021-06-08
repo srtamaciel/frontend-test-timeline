@@ -69,11 +69,11 @@ class App extends React.PureComponent {
       return (
         <div>
           In this timeline we have {this.state.layout.length} clips:
-          {unitiesOfTimeline} Your timeline have a total of
+          {unitiesOfTimeline} Your timeline have a total of 
           {this.state.layout.reduce((acc, unities) => {
             return acc + unities.w;
           }, 0)}
-           units.
+            units.
         </div>
       );
     };
