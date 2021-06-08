@@ -2,17 +2,18 @@
 
 En la parte superior contamos con tres botones, estos añaden el clip correspondiente a su nombre al timeline tantas veces como sea pulsado.
 
-El clip puede ser redimensionado a lo ancho y reubicado en cualquier parte del timeline.
+El clip puede ser redimensionado a lo ancho y reubicado dentro del timeline.
 
-Al pulsar el botón 'Export' veremos en pantalla toda la informacion referente al timeline. (Cuántos clips hay en total, posición, cuántas unidades de tiempo ocupa cada uno y cuántas han sido ocupadas en total)
+Al pulsar el botón 'Export' veremos en pantalla toda la informacion referente al interior del timeline. (Cuántos clips hay en total, posición, cuántas unidades de tiempo ocupa cada uno y cuántas han sido ocupadas en total)
 
 ![screenshot-test](https://i.ibb.co/DzvFLm9/Captura-de-pantalla-2021-06-08-a-las-9-57-43.png)
 
 ## Setup 
 Para ver el ejercicio subido a Netlify:
-→ [Test-web](https://test-timeline.netlify.app/)
 
-Para ver el ejercicio en local:
+- [Test web online](https://test-timeline.netlify.app/)
+
+Para ver el ejercicio en ##local:
 - Clona este repositorio
 
 ```shell
@@ -21,15 +22,15 @@ $ npm install
 $ npm start
 ```
 
-## Tecnologies ⌨️
+## Tecnologías ⌨️
 - React
 - HTML5
 - SASS
 
-### Other tools 🛠️
+### Otras herramientas 🛠️
 - NPM packages
 
 ---
-## Author✒️
+## Autora✒️
 ⌨️ with ❤️ by:
  [Raquel R D](https://www.linkedin.com/in/raquel-rodriguez-diaz/) - [GitHub](https://github.com/srtamaciel)
