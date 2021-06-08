@@ -73,7 +73,7 @@ class App extends React.PureComponent {
           {this.state.layout.reduce((acc, unities) => {
             return acc + unities.w;
           }, 0)}
-          units.
+           units.
         </div>
       );
     };
