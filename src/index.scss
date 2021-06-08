@@ -15,22 +15,23 @@ html{
 .button{
   display: flex;
   justify-content: space-evenly;
-}
-button{
+  button{
   background-color: none;
   border:none;
   padding: 10px;
   transition: 300ms;
   border-radius: 5px;
+  &:hover {
+    transition: 300ms;
+    background-color: rgba(255, 255, 255, 0.25);
+    border:none;
+    padding: 10px;
+    color:whitesmoke;
+    cursor: pointer;
+  }
 }
-button:hover {
-  transition: 300ms;
-  background-color: transparent;
-  border:none;
-  padding: 10px;
-  color:whitesmoke;
-  cursor: pointer;
 }
+
 .timeline-title{
   display: flex;
   justify-content: center;
@@ -44,12 +45,13 @@ button:hover {
   color: white;
   text-align: center;
   border-radius: 5px;
+  span {
+    display: inline-block;
+    padding: 20px 10px;
+  }
 
 }
-.react-grid-item span {
-  display: inline-block;
-  padding: 20px 10px;
-}
+
 .react-grid-item.cssTransforms {
   transition-property: transform;
 }
@@ -76,25 +78,26 @@ button:hover {
   user-select: none;
 }
 
-.react-grid-item > .react-resizable-handle {
-  position: absolute;
-  width: 20px;
-  height: 20px;
-  bottom: 0;
-  right: 0;
-  
+.react-grid-item {
+  .react-resizable-handle {
+    position: absolute;
+    width: 20px;
+    height: 20px;
+    bottom: 0;
+    right: 0;
+    &:after {
+      content: "";
+      position: absolute;
+      right: 3px;
+      bottom: 3px;
+      width: 5px;
+      height: 5px;
+      border-right: 2px solid rgba(0, 0, 0, 0.4);
+      border-bottom: 2px solid rgba(0, 0, 0, 0.4);
+    }
+  }
 }
 
-.react-grid-item > .react-resizable-handle::after {
-  content: "";
-  position: absolute;
-  right: 3px;
-  bottom: 3px;
-  width: 5px;
-  height: 5px;
-  border-right: 2px solid rgba(0, 0, 0, 0.4);
-  border-bottom: 2px solid rgba(0, 0, 0, 0.4);
-}
 .export-info{
   text-align: center;
   color: whitesmoke;

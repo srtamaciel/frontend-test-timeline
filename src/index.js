@@ -2,7 +2,7 @@ import React from "react";
 import ReactDOM from "react-dom";
 import RGL, {WidthProvider} from "react-grid-layout";
 
-import "./index.css";
+import "./index.scss";
 
 const ReactGridLayout = WidthProvider(RGL);
 
@@ -66,18 +66,18 @@ class App extends React.PureComponent {
     // Mensaje entero botón export
     const exportButton = () => {
       this.setState({showMessage: true});
-
       return (
         <div>
-          In this timeline we have {this.state.layout.length} clips:{" "}
-          {unitiesOfTimeline} Your timeline have a total of{" "}
+          In this timeline we have {this.state.layout.length} clips:
+          {unitiesOfTimeline} Your timeline have a total of
           {this.state.layout.reduce((acc, unities) => {
             return acc + unities.w;
-          }, 0)}{" "}
+          }, 0)}
           units.
         </div>
       );
     };
+    
 
     //Printeado del timeline, sólo se muestra si la propiedad seeTimeline de app es true
     const timeline = () => {
