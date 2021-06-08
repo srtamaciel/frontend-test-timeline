@@ -13,7 +13,7 @@ Para ver el ejercicio subido a Netlify:
 
 - [Test web online](https://test-timeline.netlify.app/)
 
-Para ver el ejercicio en ##local:
+Para ver el ejercicio en local:
 - Clona este repositorio
 
 ```shell
@@ -24,6 +24,7 @@ $ npm start
 
 ## Tecnologías ⌨️
 - React
+- JSX
 - HTML5
 - SASS
 
