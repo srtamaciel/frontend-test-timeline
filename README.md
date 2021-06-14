@@ -19,7 +19,7 @@ Para ver el ejercicio en local:
 - Clona este repositorio
 
 ```shell
-$ cd test-timeline
+$ cd frontend-test-timeline
 $ npm install
 $ npm start
 ```
